@@ -1,0 +1,105 @@
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #EBE8E1;
+}
+
+.page{
+	margin-top: 15px;
+
+	background: white;
+	height: auto;
+	width: auto;
+	display: grid;
+	grid-template-columns: repeat(6 auto);
+	grid-template-rows: auto;
+	grid-template-areas: 
+		". . hd hd . ."
+		". . hd hd . ."
+		". . mn mn . ."
+		". . mn mn . ."
+		". . mn mn . ."
+		". . ft ft . ."
+		". . ff ff . .";
+}
+
+/*CSS for Header section of website*/
+
+header{
+	grid-area:hd;
+	margin: 0px 300px 0px 300px;
+
+}
+
+.navlist {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-between;
+}
+
+.search{
+	margin: 10px 0px 5px 91.5%;
+
+}
+
+input[type=text]{
+	background-color: #E5E0CF;
+	color:black;
+}
+.hero_ban{
+	margin-top: 50px;
+	background-color: #AACAB3;
+	height: 300px;
+	width:auto;
+	display: flex;
+
+}
+
+.under_ban{
+	width: 100%;
+	height: 100px;
+	background-color: #EBE8E1;
+	margin-bottom: 150px;
+	
+}
+#blurb{
+	text-align: center;
+	padding-top: 40px;
+
+}
+
+.left_sd{
+	flex-basis: 70%
+}
+
+.right_sd{
+	width: 30%;
+	justify-content: space-between;
+	background-color: #89B197
+}
+
+
+/*/*Main Website Section*/
+main{
+	grid-area: mn;
+	margin: 0px 300px 0px 300px;
+	display: flex;
+	
+}
+
+.blog_space{
+	flex-grow: 2;
+	flex-basis: 70%
+	
+}
+
+.sidebar{
+	flex-grow: 1;
+	flex-basis: 30%
+
+}
